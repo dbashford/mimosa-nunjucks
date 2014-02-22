@@ -43,15 +43,18 @@ nunjucks: {
 
 * `lib`: You may want to use this module but may not be ready to use the latest version of Nunjucks. Using the `lib` property you can provide a specific version of Nunjucks if the one being used by this module isn't to your liking. To provide a specific version, you must have it `npm install`ed into your project and then provide it to `lib`. For instance: `lib: require('nunjucks')`.
 * `extensions`: an array of strings, the extensions of your Nunjucks files.
-* `options`: an object, pass through options to the nunjucks compiler, for more details, see the [nunjucks precompile options list](http://jlongster.github.io/nunjucks/api.html#precompiling).
+* `options`: an object, pass through options to the nunjucks compiler, for more details, see the [nunjucks precompile options list](http://jlongster.github.io/nunjucks/api.html#precompiling). The `name` option is provided by Mimosa via the `template` config.
 
->>>
-name: name of the template, when compiling a string (required) or a file (optional, defaults to path). names are auto-generated when compiling a directory.
-asFunction: generate a callable function
-force: keep compiling on error
-env: the Environment to use (gets extensions and async filters from it)
-include: array of file/folders to include (folders are auto-included, files are auto-excluded)
-exclude: array of file/folders to exclude (folders are auto-included, files are auto-excluded)
+
+> asFunction: generate a callable function
+
+> force: keep compiling on error
+
+> env: the Environment to use (gets extensions and async filters from it)
+
+> include: array of file/folders to include (folders are auto-included, files are auto-excluded)
+
+> exclude: array of file/folders to exclude (folders are auto-included, files are auto-excluded)
 
 
 
