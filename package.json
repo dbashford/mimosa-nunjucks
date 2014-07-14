@@ -1,6 +1,6 @@
 {
   "name": "mimosa-nunjucks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dbashford/mimosa-nunjucks",
   "author": "David Bashford",
   "description": "A Nunjucks client template compiler for Mimosa 2.0+",
@@ -21,7 +21,7 @@
     "nunjucks"
   ],
   "dependencies": {
-    "nunjucks": "1.0.1",
+    "nunjucks": "1.0.5",
     "lodash": "2.4.1"
   },
   "license": "MIT",
